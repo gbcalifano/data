@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Dataset</title>
+    <title>Download Datasets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <a href="masteristi.dta" download>masteristi.dta</a>
-    <a href="height.dta" download>height.dta</a>
+
+    <h1>Datasets</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dataset</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Masteristi</td>
+                <td><a href="masteristi.dta" download>Download</a></td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td><a href="height.dta" download>Download</a></td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
