@@ -10,7 +10,6 @@
       padding: 20px;
     }
     table {
-      /* allow columns to size to content */
       table-layout: auto;
       border-collapse: collapse;
       margin-top: 20px;
@@ -19,7 +18,6 @@
       border: 1px solid #ddd;
       padding: 10px;
     }
-    /* left-align the first column */
     th:first-child,
     td:first-child {
       text-align: left;
@@ -29,7 +27,6 @@
       cursor: pointer;
       user-select: none;
       position: relative;
-      /* center other headers */
       text-align: center;
     }
     th .arrow {
@@ -98,13 +95,13 @@
       <tr>
         <td>REM</td>
         <td>pdf</td>
-        <td>Eco-packaging in organic foods: rational decisions or emotional influences?</td>
+        <td>Eco-packaging in organic foods: Rational decisions or emotional influences?</td>
         <td><a href="Esame/REM.pdf" download>Download</a></td>
       </tr>
       <tr>
         <td>RNAi</td>
         <td>pdf</td>
-        <td>Cultivating trust: public perception of RNAi technologies in agriculture</td>
+        <td>Cultivating trust: Public perception of RNAi technologies in agriculture</td>
         <td><a href="Esame/RNAi.pdf" download>Download</a></td>
       </tr>
     </tbody>
@@ -118,7 +115,6 @@
       const tbody = table.tBodies[0];
       const rows = Array.from(tbody.rows);
       
-      // toggle direction
       let dir = (colIndex === lastCol && lastDir === 'asc') ? 'desc' : 'asc';
 
       rows.sort((a, b) => {
@@ -131,7 +127,6 @@
 
       rows.forEach(row => tbody.appendChild(row));
 
-      // update arrows
       const ths = table.tHead.rows[0].cells;
       for (let i = 0; i < ths.length; i++) {
         const arrowSpan = ths[i].querySelector('.arrow');
